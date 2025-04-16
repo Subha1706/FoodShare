@@ -22,21 +22,21 @@ Node.js
 MongoDB (local or cloud like MongoDB Atlas)
 
 Setup
-'''javascript
+```javascript
 git clone https://github.com/your-username/foodshare-connect-aid.git
 cd foodshare-connect-aid
 npm install
-'''
+```
 Create .env file:
-'''javascript
+```javascript
 MONGO_URI=mongodb://localhost:27017/foodshare
 SESSION_SECRET=yourSecretKey
 PORT=3000
-'''
+```
 Run App
-'''javascript
+```javascript
 npm start
-'''
+```
 
 🔧 Key Database Operations
 User Authentication

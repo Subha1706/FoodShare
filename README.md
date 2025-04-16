@@ -6,16 +6,19 @@ FoodShare - Connect Aid is a full-stack web platform that bridges the gap betwee
 📦 **CORE FUNCTIONALITY**
 
 👤 **User Auth**
+
 Sign Up: Creates a new user with hashed password
 Login: Verifies password hash and creates session
 Logout: Ends user session
 
 🥘 **Donations**
+
 Create: Users post food items with location and expiry
 View: Anyone can browse active food listings
 Delete: Only the original donor can delete their own post
 
 🧪 **DEVELOPMENT SETUP**
+
 Prerequisites
 Node.js
 MongoDB (local or cloud like MongoDB Atlas)
@@ -38,6 +41,7 @@ npm start
 ```
 
 🔧 **KEY DATABASE OPERATIONS**
+
 **User Authentication**
 Registration: Inserts a new user with a bcrypt-hashed password into the MongoDB users collection.
 
@@ -50,6 +54,7 @@ Read: Fetches available donations, filtered by expiration date and availability.
 Delete: Removes donation entries; only the donor can delete their posts.
 
 🛡️ **DATA SECURITY MEASURES**
+
 **User Authentication**: Session-based authentication via express-session.
 
 **Password Security**: All passwords are hashed using bcrypt before being saved.
@@ -61,6 +66,7 @@ Delete: Removes donation entries; only the donor can delete their posts.
 **MongoDB Injection Prevention**: All database interactions use Mongoose methods, which protect against injection attacks by default.
 
 🚀 **DATABASE PERFOEMANCE CONSIDERATIONS**
+
 **Indexing**: MongoDB automatically indexes _id, and additional indexes can be added for userId, expiryDate, etc., for faster queries.
 
 **Query Optimization**: Filters and projections are used to fetch only the necessary data (e.g., donations not yet expired).
@@ -68,6 +74,7 @@ Delete: Removes donation entries; only the donor can delete their posts.
 **Transaction Management**: Although MongoDB supports multi-document transactions, single-document atomicity is sufficient for most operations here.
 
 🌐 **Full Stack Web Development Aspects**
+
 This project demonstrates key components of full-stack web development:
 
 **Frontend**
@@ -92,6 +99,7 @@ MongoDB: NoSQL database for flexible and scalable data storage.
 Mongoose: ODM used to model application data and enforce schema rules.
 
 🔐 **AUTHENTICATION & SECURITY**
+
 **Session Management**: Users stay logged in using cookie-based sessions.
 
 **Password Hashing**: User passwords are securely hashed with bcrypt.
@@ -99,6 +107,7 @@ Mongoose: ODM used to model application data and enforce schema rules.
 **Access Control**: Route guards ensure only authenticated users can post or delete data.
 
 📲 **APPLICATION FEATURES**
+
 **Food Listing**: Users can donate food with title, description, quantity, and location.
 
 **Claim Requests**: Users in need can request donations.
@@ -108,6 +117,7 @@ Mongoose: ODM used to model application data and enforce schema rules.
 **User Dashboard** Donors and recipients can view their activity and status updates.
 
 🧪 **DEVELOPMENT WORKFLOW**
+
 To work with the database in this project:
 
 **Setup MongoDB**: Use MongoDB locally or with a service like MongoDB Atlas.
@@ -119,6 +129,7 @@ To work with the database in this project:
 **Database Maintenance**: Use MongoDB Compass or CLI tools for data inspection and maintenance.
 
 🧑‍🤝‍🧑 **Team Branding**
+
 The footer displays "Tikey", representing our team and commitment to social good through technology.
 
 This project is designed with scalability, security, and maintainability in mind, making it easy to expand or adapt for other aid-sharing use cases like clothing, shelter, or community events.

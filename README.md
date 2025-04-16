@@ -4,7 +4,7 @@ TEAM NAME : DATA GUARDIANS
 🥗 FoodShare - Connect Aid
 FoodShare - Connect Aid is a full-stack web platform that bridges the gap between food donors and individuals or organizations in need. The application enables real-time listing and claiming of surplus food to reduce waste and support communities.
 
-📦 Core Functionality
+📦** Core Functionality **
 
 👤 User Auth
 Sign Up: Creates a new user with hashed password
@@ -16,7 +16,7 @@ Create: Users post food items with location and expiry
 View: Anyone can browse active food listings
 Delete: Only the original donor can delete their own post
 
-🧪 Development Setup
+🧪 ** Development Setup **
 Prerequisites
 Node.js
 MongoDB (local or cloud like MongoDB Atlas)
